@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>YouTube De Perú</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f9f9f9;
+        }
+        header {
+            background: #ff0000;
+            color: #fff;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            padding: 0.5rem 1rem;
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+        }
+        header .logo {
+            font-size: 1.5rem;
+            font-weight: bold;
+        }
+        header input {
+            flex: 1;
+            margin: 0 1rem;
+            padding: 0.5rem;
+            font-size: 1rem;
+        }
+        header button {
+            padding: 0.5rem 1rem;
+            background: #fff;
+            border: none;
+            cursor: pointer;
+        }
+        nav {
+            background: #f1f1f1;
+            padding: 0.5rem 1rem;
+            display: flex;
+            gap: 1rem;
+            border-bottom: 1px solid #ccc;
+        }
+        nav a {
+            text-decoration: none;
+            color: #333;
+            font-weight: bold;
+        }
+        nav a:hover {
+            color: #ff0000;
+        }
+        main {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+            gap: 1rem;
+            padding: 1rem;
+        }
+        .video-card {
+            background: #fff;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+            overflow: hidden;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+        }
+        .video-card img {
+            width: 100%;
+            display: block;
+        }
+        .video-card .info {
+            padding: 0.5rem;
+        }
+        .video-card .info h3 {
+            font-size: 1rem;
+            margin: 0;
+        }
+        .video-card .info p {
+            font-size: 0.9rem;
+            color: #666;
+        }
+        footer {
+            background: #333;
+            color: #fff;
+            text-align: center;
+            padding: 1rem 0;
+            margin-top: 2rem;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="logo">MiYouTube</div>
+        <input type="text" placeholder="Buscar...">
+        <button>Buscar</button>
+    </header>
+    <nav>
+        <a href="#">Inicio</a>
+        <a href="#">Tendencias</a>
+        <a href="#">Suscripciones</a>
+        <a href="#">Biblioteca</a>
+    </nav>
+    <main>
+        <div class="video-card">
+            <img src="https://via.placeholder.com/300x200" alt="Video Thumbnail">
+            <div class="info">
+                <h3>Título del Video</h3>
+                <p>Canal Ejemplo</p>
+            </div>
+        </div>
+        <div class="video-card">
+            <img src="https://via.placeholder.com/300x200" alt="Video Thumbnail">
+            <div class="info">
+                <h3>Título del Video</h3>
+                <p>Canal Ejemplo</p>
+            </div>
+        </div>
+        <div class="video-card">
+            <img src="https://via.placeholder.com/300x200" alt="Video Thumbnail">
+            <div class="info">
+                <h3>Título del Video</h3>
+                <p>Canal Ejemplo</p>
+            </div>
+        </div>
+    </main>
+    <footer>
+        &copy; 2024 MiYouTube - Página Inspirada
+    </footer>
+</body>
+</html>
